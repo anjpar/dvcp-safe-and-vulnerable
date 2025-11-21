@@ -1,0 +1,19 @@
+# Compiled binaries
+*.o
+*.out
+dvcp
+dvcp_fuzz
+
+# Fuzzing artifacts
+crash-*
+timeout-*
+leak-*
+*.log
+
+# Build directories
+build/
+out/
+
+# IDE
+.vscode/
+.idea/
