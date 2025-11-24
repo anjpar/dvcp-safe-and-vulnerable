@@ -113,6 +113,7 @@ int ProcessImage(char* filename) {
     return 0;
 }
 
+#ifndef FUZZING_BUILD
 int main(int argc, char* argv[]) {
     if (argc != 2) {
         printf("Usage: %s <image_file>\n", argv[0]);
@@ -121,3 +122,4 @@ int main(int argc, char* argv[]) {
 
     return ProcessImage(argv[1]);
 }
+#endif
