@@ -13,3 +13,6 @@ $CC $CFLAGS $LIB_FUZZING_ENGINE \
 # Create seed corpus
 mkdir -p $OUT/dvcp_fuzz_seed_corpus
 echo -ne "IMG\x00\x01\x00\x00\x00\x01\x00\x00\x00AAAAAAAAAA" > $OUT/dvcp_fuzz_seed_corpus/seed1
+
+# Copy options file
+cp $SRC/dvcp/contrib/oss-fuzz/*.options $OUT/ || true
